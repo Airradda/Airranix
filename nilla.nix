@@ -8,10 +8,7 @@ in
       ./modules/Settings.nix
     ];
     config = {
-      inputs = {
-        nilla-cli = {
-          src = pins.nilla-cli;
-        };
+      inputs = config.lib.attrs.mergeRecursive {
         nixpkgs = {
           src = pins.nixpkgs;
           settings = {
@@ -19,6 +16,6 @@ in
             overlays = [];
           };
         };
-      };
+      } (builtins.mapAttrs (name: value: { src = value; }) pins);
     };
   })
