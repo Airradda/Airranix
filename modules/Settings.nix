@@ -1,9 +1,11 @@
 { config, pkgs, lib, ... }:
 let
   cfg = config.Settings;
+  inherit (lib.options) mkOption mkEnableOption mkPackageOption;
+  inherit (lib) types toSentenceCase;
 in
 {
-  options.Settings = with lib; {
+  options.Settings = {
     enable = mkEnableOption "Settings module.";
     DeviceType = mkOption {
       description = "Set the device type. This will change the size and position of windows to better fit the screen real estate.";
@@ -129,30 +131,30 @@ in
     ];
     xdg.mime = {
       defaultApplications = {
-        "application/json" = [ "${lib.toSentenceCase cfg.DefaultEditor.pname}.desktop" ];
-        "application/pdf" = [ "${lib.toSentenceCase cfg.DefaultPDFViewer.pname}.desktop" ];
-        "application/epub+zip" = [ "${lib.toSentenceCase cfg.DefaultPDFViewer.pname}.desktop" ];
-        "application/rdf+xml" = [ "${lib.toSentenceCase cfg.DefaultBrowser.pname}.desktop" ];
-        "application/rss+xml" = [ "${lib.toSentenceCase cfg.DefaultBrowser.pname}.desktop" ];
-        "application/xhtml+xml" = [ "${lib.toSentenceCase cfg.DefaultBrowser.pname}.desktop" ];
-        "application/xhtml_xml" = [ "${lib.toSentenceCase cfg.DefaultBrowser.pname}.desktop" ];
-        "application/xml" = [ "${lib.toSentenceCase cfg.DefaultBrowser.pname}.desktop" ];
-        "application/x-wine-extension-ini" = [ "${lib.toSentenceCase cfg.DefaultEditor.pname}.desktop" ];
-        "image/gif" = [ "${lib.toSentenceCase cfg.DefaultMediaPlayer.pname}.desktop" ];
-        "image/jpeg" = [ "${lib.toSentenceCase cfg.DefaultImageViewer.pname}.desktop" ];
-        "image/png" = [ "${lib.toSentenceCase cfg.DefaultImageViewer.pname}.desktop" ];
-        "image/svg+xml" = [ "${lib.toSentenceCase cfg.DefaultImageViewer.pname}.desktop" ];
-        "image/webp" = [ "${lib.toSentenceCase cfg.DefaultImageViewer.pname}.desktop" ];
-        "image/jxl" = [ "${lib.toSentenceCase cfg.DefaultImageViewer.pname}.desktop" ];
-        "text/css"  =  [ "${lib.toSentenceCase cfg.DefaultEditor.pname}.desktop" ];
-        "text/html" = [ "${lib.toSentenceCase cfg.DefaultBrowser.pname}.desktop" ];
-        "text/markdown" = [ "${lib.toSentenceCase cfg.DefaultEditor.pname}.desktop" ];
-        "text/plain" = [ "${lib.toSentenceCase cfg.DefaultEditor.pname}.desktop" ];
-        "text/xml" = [ "${lib.toSentenceCase cfg.DefaultEditor.pname}.desktop" ];
-        "text/x-opml+xml" = [ "${lib.toSentenceCase cfg.DefaultEditor.pname}.desktop" ];
-        "text/x-python" = [ "${lib.toSentenceCase cfg.DefaultEditor.pname}.desktop" ];
-        "x-scheme-handler/http" = [ "${lib.toSentenceCase cfg.DefaultBrowser.pname}.desktop" ];
-        "x-scheme-handler/https" = [ "${lib.toSentenceCase cfg.DefaultBrowser.pname}.desktop" ];
+        "application/json" = [ "${toSentenceCase cfg.DefaultEditor.pname}.desktop" ];
+        "application/pdf" = [ "${toSentenceCase cfg.DefaultPDFViewer.pname}.desktop" ];
+        "application/epub+zip" = [ "${toSentenceCase cfg.DefaultPDFViewer.pname}.desktop" ];
+        "application/rdf+xml" = [ "${toSentenceCase cfg.DefaultBrowser.pname}.desktop" ];
+        "application/rss+xml" = [ "${toSentenceCase cfg.DefaultBrowser.pname}.desktop" ];
+        "application/xhtml+xml" = [ "${toSentenceCase cfg.DefaultBrowser.pname}.desktop" ];
+        "application/xhtml_xml" = [ "${toSentenceCase cfg.DefaultBrowser.pname}.desktop" ];
+        "application/xml" = [ "${toSentenceCase cfg.DefaultBrowser.pname}.desktop" ];
+        "application/x-wine-extension-ini" = [ "${toSentenceCase cfg.DefaultEditor.pname}.desktop" ];
+        "image/gif" = [ "${toSentenceCase cfg.DefaultMediaPlayer.pname}.desktop" ];
+        "image/jpeg" = [ "${toSentenceCase cfg.DefaultImageViewer.pname}.desktop" ];
+        "image/png" = [ "${toSentenceCase cfg.DefaultImageViewer.pname}.desktop" ];
+        "image/svg+xml" = [ "${toSentenceCase cfg.DefaultImageViewer.pname}.desktop" ];
+        "image/webp" = [ "${toSentenceCase cfg.DefaultImageViewer.pname}.desktop" ];
+        "image/jxl" = [ "${toSentenceCase cfg.DefaultImageViewer.pname}.desktop" ];
+        "text/css"  =  [ "${toSentenceCase cfg.DefaultEditor.pname}.desktop" ];
+        "text/html" = [ "${toSentenceCase cfg.DefaultBrowser.pname}.desktop" ];
+        "text/markdown" = [ "${toSentenceCase cfg.DefaultEditor.pname}.desktop" ];
+        "text/plain" = [ "${toSentenceCase cfg.DefaultEditor.pname}.desktop" ];
+        "text/xml" = [ "${toSentenceCase cfg.DefaultEditor.pname}.desktop" ];
+        "text/x-opml+xml" = [ "${toSentenceCase cfg.DefaultEditor.pname}.desktop" ];
+        "text/x-python" = [ "${toSentenceCase cfg.DefaultEditor.pname}.desktop" ];
+        "x-scheme-handler/http" = [ "${toSentenceCase cfg.DefaultBrowser.pname}.desktop" ];
+        "x-scheme-handler/https" = [ "${toSentenceCase cfg.DefaultBrowser.pname}.desktop" ];
       };
     };
   };
