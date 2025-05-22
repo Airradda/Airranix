@@ -6,6 +6,7 @@ in
   {
     includes = [
       "${pins.nilla-nixos}/modules/nixos.nix"
+      ./shells
     ];
     config = {
       inputs = config.lib.attrs.mergeRecursive {
