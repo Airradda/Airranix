@@ -4,6 +4,7 @@ The plan is to include the following compared to my previous flake based approac
 
 - Flakes (Dependancy Pinning) -> [Npins](https://github.com/andir/npins)
 - Flakes (Project Management) -> [Nilla](https://github.com/nilla-nix/nilla)
+  - Using [Nilla-Utils](https://github.com/arnarg/nilla-utils)
 - Flakes (New CLI) -> [Nilla-CLI](https://github.com/nilla-nix/cli)
 - Home Manager -> [Hjem](https://github.com/feel-co/hjem)/[Hjem-Rum](https://github.com/snugnug/hjem-rum)
 - ???
@@ -17,7 +18,7 @@ This will be used to manage:
   - Airradda-HomeLab (Server)
 
 # Notes
-This also serves as a way to get myself more familar a [Jujutsu](https://github.com/jj-vcs/jj) based workflow and out of the habit of working on main.
+This also serves as a way to get myself more familar a [Jujutsu](https://github.com/jj-vcs/jj) based workflow and out of the habit of making large complex changes on main.
 Additionally, I might use this to explore [git-bug](https://github.com/git-bug/git-bug) as way of managing issues as to not tie myself to GitHub, assuming it doesn't cause problems with [Jujutsu](https://github.com/jj-vcs/jj). 
 
 ---
