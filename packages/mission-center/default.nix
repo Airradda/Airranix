@@ -8,7 +8,7 @@
 
   src = fetchurl {
     url = "https://gitlab.com/mission-center-devs/mission-center/-/jobs/9906491703/artifacts/raw/MissionCenter_v${version}-x86_64.AppImage";
-    sha256 = "sha256-L2N3saNeJDdji/IzC2Zi0Iixc/pPNSUpz07egywx+4U=";
+    sha256 = "sha256-aw3+orqr9+PjT6QKKIez7Ry8w1oO7NAn02UpVuDt3hI=";
   };
 
   # Extract the appimage first so we can get the icon inside
@@ -22,7 +22,7 @@
   wrapped = appimageTools.wrapAppImage {
     name = "mission-center";
     src = extracted;
-    # extraPkgs = pkgs: with pkgs; [libsodium fuse];
+    extraPkgs = pkgs: with pkgs; [libsodium fuse libxcrypt-legacy];
   };
 
   desktopItem = makeDesktopItem {
@@ -30,8 +30,8 @@
     desktopName = "Mission-Center";
     icon = "${extracted}/Mission-Center.png";
     comment = "Mission-Center";
-    exec = "${wrapped}/bin/mission-center";
-    categories = ["Task Manager"];
+    exec = "${wrapped}/usr/bin/mission-center";
+    categories = ["System" "Monitor"];
   };
 in
   symlinkJoin {
