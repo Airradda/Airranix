@@ -29,6 +29,11 @@ in
         };
         shells = {
           folder = ./shells;
+          settings = {
+            args = {
+              inputs = config.inputs;
+            };
+          };
         };
       };
       modules.nixos.default = ./modules/nixos;
