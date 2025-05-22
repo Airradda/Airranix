@@ -47,6 +47,19 @@
       "url": "https://api.github.com/repos/nilla-nix/nilla/tarball/v0.0.0-alpha.12",
       "hash": "0y70c9p4ln0jd673k2ifi28s92pgphjdykgar71s20bv2qzg8naz"
     },
+    "nilla-nixos": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nilla-nix",
+        "repo": "nixos"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "52c623ae89fe77de669a981c7e92b1504cd99eac",
+      "url": "https://github.com/nilla-nix/nixos/archive/52c623ae89fe77de669a981c7e92b1504cd99eac.tar.gz",
+      "hash": "0bjbkyd7c1cp7daf8j4h7x339ngrghnjq5wgqq0fbk269rhrvmpf"
+    },
     "nixpkgs": {
       "type": "Git",
       "repository": {
