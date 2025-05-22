@@ -1,0 +1,34 @@
+{
+  "pins": {
+    "nilla": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nilla-nix",
+        "repo": "nilla"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "submodules": false,
+      "version": "v0.0.0-alpha.12",
+      "revision": "5d3e509727f387a3000d9ac32031836661f233c9",
+      "url": "https://api.github.com/repos/nilla-nix/nilla/tarball/v0.0.0-alpha.12",
+      "hash": "0y70c9p4ln0jd673k2ifi28s92pgphjdykgar71s20bv2qzg8naz"
+    },
+    "nixpkgs": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nixos",
+        "repo": "nixpkgs"
+      },
+      "branch": "nixos-unstable",
+      "submodules": false,
+      "revision": "2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "url": "https://github.com/nixos/nixpkgs/archive/2795c506fe8fb7b03c36ccb51f75b6df0ab2553f.tar.gz",
+      "hash": "0m6prywp2axikm2sld8x6g362lzy2y8nf51w106j2riaklg6mfav"
+    }
+  },
+  "version": 5
+}
