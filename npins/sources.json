@@ -1,0 +1,60 @@
+{
+  "pins": {
+    "nilla": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nilla-nix",
+        "repo": "nilla"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "submodules": false,
+      "version": "v0.0.0-alpha.12",
+      "revision": "5d3e509727f387a3000d9ac32031836661f233c9",
+      "url": "https://api.github.com/repos/nilla-nix/nilla/tarball/v0.0.0-alpha.12",
+      "hash": "0y70c9p4ln0jd673k2ifi28s92pgphjdykgar71s20bv2qzg8naz"
+    },
+    "nilla-utils": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "arnarg",
+        "repo": "nilla-utils"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "79c10f2ac836947c5d1e04d2690b5077e93ecf15",
+      "url": "https://github.com/arnarg/nilla-utils/archive/79c10f2ac836947c5d1e04d2690b5077e93ecf15.tar.gz",
+      "hash": "1scmhingig23ms5m778bhg5aaw416pj0h64nnji0a0w75isy723g"
+    },
+    "nixos-hardware": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nixos",
+        "repo": "nixos-hardware"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "2b9118883d29290a1b16ae3a12aedc478dae2546",
+      "url": "https://github.com/nixos/nixos-hardware/archive/2b9118883d29290a1b16ae3a12aedc478dae2546.tar.gz",
+      "hash": "146y0mdb90wq4n74sikx775sg0lsw8jg5wbl72hhrm105v2310zl"
+    },
+    "nixpkgs": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nixos",
+        "repo": "nixpkgs"
+      },
+      "branch": "nixos-unstable",
+      "submodules": false,
+      "revision": "2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+      "url": "https://github.com/nixos/nixpkgs/archive/2795c506fe8fb7b03c36ccb51f75b6df0ab2553f.tar.gz",
+      "hash": "0m6prywp2axikm2sld8x6g362lzy2y8nf51w106j2riaklg6mfav"
+    }
+  },
+  "version": 5
+}
