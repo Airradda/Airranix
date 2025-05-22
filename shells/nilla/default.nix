@@ -6,6 +6,7 @@
               packages = with pkgs; [
                 npins
                 config.inputs.nilla-cli.result.packages.nilla-cli.result.x86_64-linux
+                config.inputs.nilla-nixos.result.packages.nilla-nixos.result.x86_64-linux
               ];
             };
           settings = {
