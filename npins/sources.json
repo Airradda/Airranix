@@ -1,5 +1,36 @@
 {
   "pins": {
+    "nilla-cli": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nilla-nix",
+        "repo": "cli"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "submodules": false,
+      "version": "v0.0.0-alpha.8",
+      "revision": "e0a987e7fbb4307d103ec10d44b31a92e36c775e",
+      "url": "https://api.github.com/repos/nilla-nix/cli/tarball/v0.0.0-alpha.8",
+      "hash": "0gvy0ypmbyphrcxqmavy488nc299s4zb43sj0nz0qzcgcrw1b1az"
+    },
+    "lix-module": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "Git",
+        "url": "https://git.lix.systems/lix-project/nixos-module.git"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "submodules": false,
+      "version": "2.93.0",
+      "revision": "cd2a9c028df820a83ca2807dc6c6e7abc3dfa7fc",
+      "url": null,
+      "hash": "1pz4j93rwgf3hv3za3q16300kp9b74aglb1mbr5qpiw0g0mphm6p"
+    },
     "nilla": {
       "type": "GitRelease",
       "repository": {
