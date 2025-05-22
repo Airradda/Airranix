@@ -1,21 +1,5 @@
 {
   "pins": {
-    "nilla-cli": {
-      "type": "GitRelease",
-      "repository": {
-        "type": "GitHub",
-        "owner": "nilla-nix",
-        "repo": "cli"
-      },
-      "pre_releases": false,
-      "version_upper_bound": null,
-      "release_prefix": null,
-      "submodules": false,
-      "version": "v0.0.0-alpha.8",
-      "revision": "e0a987e7fbb4307d103ec10d44b31a92e36c775e",
-      "url": "https://api.github.com/repos/nilla-nix/cli/tarball/v0.0.0-alpha.8",
-      "hash": "0gvy0ypmbyphrcxqmavy488nc299s4zb43sj0nz0qzcgcrw1b1az"
-    },
     "lix-module": {
       "type": "GitRelease",
       "repository": {
@@ -46,6 +30,22 @@
       "revision": "5d3e509727f387a3000d9ac32031836661f233c9",
       "url": "https://api.github.com/repos/nilla-nix/nilla/tarball/v0.0.0-alpha.12",
       "hash": "0y70c9p4ln0jd673k2ifi28s92pgphjdykgar71s20bv2qzg8naz"
+    },
+    "nilla-cli": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nilla-nix",
+        "repo": "cli"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "submodules": false,
+      "version": "v0.0.0-alpha.8",
+      "revision": "e0a987e7fbb4307d103ec10d44b31a92e36c775e",
+      "url": "https://api.github.com/repos/nilla-nix/cli/tarball/v0.0.0-alpha.8",
+      "hash": "0gvy0ypmbyphrcxqmavy488nc299s4zb43sj0nz0qzcgcrw1b1az"
     },
     "nilla-nixos": {
       "type": "Git",
