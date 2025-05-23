@@ -5,7 +5,7 @@ in
   nilla.create({config}:
   {
     includes = [
-      ./modules/Settings.nix
+      "${pins.nilla-nixos}/modules/nixos.nix"
     ];
     config = {
       inputs = config.lib.attrs.mergeRecursive {
