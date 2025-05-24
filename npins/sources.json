@@ -1,6 +1,6 @@
 {
   "pins": {
-    "cli": {
+    "nilla-cli": {
       "type": "GitRelease",
       "repository": {
         "type": "GitHub",
