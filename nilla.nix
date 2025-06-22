@@ -5,6 +5,7 @@ in
   nilla.create({config}:
   {
     includes = [
+      ./modules/Settings.nix
     ];
     config = {
       inputs = {
