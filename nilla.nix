@@ -18,5 +18,7 @@ in
           };
         };
       } (builtins.mapAttrs (name: value: { src = value; }) pins);
+      systems.nixos = {
+      };
     };
   })
