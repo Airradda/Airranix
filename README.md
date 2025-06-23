@@ -6,6 +6,7 @@ The plan is to include the following compared to my previous flake based approac
 - Flakes (Project Management) -> [Nilla](https://github.com/nilla-nix/nilla)
 - Flakes (New CLI) -> [Nilla-CLI](https://github.com/nilla-nix/cli)
 - Home Manager -> [Hjem](https://github.com/feel-co/hjem)/[Hjem-Rum](https://github.com/snugnug/hjem-rum)
+- Secrets = [sopsWarden](https://github.com/pfassina/sopswarden)
 - ???
 
 This will be used to manage:
